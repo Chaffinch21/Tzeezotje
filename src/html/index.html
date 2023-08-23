@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tzeezotje</title>
+    <meta content="Content-Security-Policy: default-src 'none'; script-src https://localhost:3000; style-src https://localhost:3000; img-src https://localhost:3000; connect-src https://localhost:3000; child-src 'self'; report-uri /my_amazing_csp_report_parser">
+    <link rel = "icon" href="./img/favicon/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/vendor.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body id="body">
+    <div class="wrap">
+        <header class = "header">
+            <div class="header__bar bar">
+                <div class="container bar__container">
+                    <a class="tel bar__tel" href="tel:+3292825725">
+                        <svg class="tel__svg">
+                            <use xlink:href="img/sprite.svg#tel"></use>
+                        </svg>
+                        <span class="tel__num">+32&nbsp;9&nbsp;282&nbsp;57&nbsp;25</span> 
+                    </a>
+                </div>  
+            </div>
+            <div class="container header__container">
+                <button class="header__burger burger burger-js" type="button" aria-label="Открыть меню" aria-expanded="false">
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                </button>
+                <a href="#" class="logo">
+                    <picture class="logo__picture">
+                        <source srcset="img/logo2.png" media="(max-width: 1024px)">
+                        <source srcset="img/logo.png" media="(min-width: 1025px)">
+                        <img src="img/logo.png" alt="логотип Tzeezotje">
+                    </picture>
+                </a>
+
+                <nav class="menu header__menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">À la carte</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Wijnkaart</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Lunchmenu</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a class="tel header__tel" href="tel:+3292825725">
+                    <svg class="tel__svg">
+                        <use xlink:href="img/sprite.svg#tel2"></use>
+                    </svg>
+                    <span class="tel__num">+32&nbsp;9&nbsp;282&nbsp;57&nbsp;25</span> 
+                </a>              
+            </div>
+        </header>
+        <section class="hero">
+            <div class="container">
+                <p class="hero__mode">OPEN EVERYDAY&nbsp;&nbsp;6AM - 9PM</p>
+
+                <h1 class="visually-hidden">
+                    'Tzeezotje
+                </h1>
+
+                <h2 class="hero__title">
+                    A bad day with lunch is better than a good day without it.
+                </h2>
+
+                <div class="hero__buttons">
+                    <button class="hero__btn">
+                        Reserve a table
+                    </button>
+                    <ul class="social">
+                        <li class="social__item">
+                            <a href="" class="social__link" aria-label="переход в фэйсбук">Fb</a>
+                        </li>
+                        <li class="social__item">
+                            <a href="" class="social__link" aria-label="переход в lg">lg</a>
+                        </li>
+                        <li class="social__item">
+                            <a href="" class="social__link" aria-label="переход в твиттер">Tw</a>
+                        </li>
+                        <li class="social__item">
+                            <a href="" class="social__link" aria-label="переход в yt">Yt</a>
+                        </li>
+                    </ul>
+                </div>
+                <img class="hero__img" src="img/jpg/hero.jpg" alt="фото ресторана">
+            </div>
+        </section>
+    </div>
+    <main class="main">
+        <section class="special">
+            <h2 class="visually-hidden">
+                spesiell meny
+            </h2>
+            <div class="container special__container">
+                <dl class="special__propertys propertys">
+                    <div class="propertys__inner">
+                        <dt class="propertys__key">Woensdag 12/01</dt>
+                        <dd class="propertys__value">
+                            <span class="propertys__proposal">Salade met Serrano</span>
+                            <span class="propertys__food">Steak Tartaar</span>
+                        </dd>
+                    </div>
+
+                    <div class="propertys__inner">
+                        <dt class="propertys__key">Donderdag 13/01</dt>
+                        <dd class="propertys__value">
+                            <span class="propertys__proposal">Toast Roquefort</span>
+                            <span class="propertys__food">Penne met Kip en Prei</span>
+                        </dd>
+                    </div>
+
+                    <div class="propertys__inner">
+                        <dt class="propertys__key">Vrijdag 14/01</dt>
+                        <dd class="propertys__value">
+                            <span class="propertys__proposal">Verrassing van de Chef</span>
+                            <span class="propertys__food">Penne met Kip en Prei</span>
+                        </dd>
+                    </div>
+
+                    <div class="propertys__inner">
+                        <dt class="propertys__key">Vrijdag 15/01</dt>
+                        <dd class="propertys__value">
+                            <span class="propertys__proposal">Verrassing van de Chef</span>
+                            <span class="propertys__food">Penne met Kip en Prei</span>
+                        </dd>
+                    </div>
+
+                    <div class="propertys__inner">
+                        <dt class="propertys__key">Vrijdag 16/01</dt>
+                        <dd class="propertys__value">
+                            <span class="propertys__proposal">Verrassing van de Chef</span>
+                            <span class="propertys__food">Penne met Kip en Prei</span>
+                        </dd>
+                    </div>
+                    
+                </dl>
+
+                
+                <div class="special__images">
+                    <picture class="special__picture special__picture--one">
+                        <source srcset="/img/jpg/menu1.webp" type="image/webp">
+                        <img src="/img/jpg/menu1.jpg" alt="фото ресторана">
+                    </picture>
+                    <picture class="special__picture special__picture--two">
+                        <source srcset="/img/jpg/menu2.webp" type="image/webp">
+                        <img src="/img/jpg/menu2.jpg" alt="фото ресторана">
+                    </picture>
+                </div>
+            </div>
+        </section>
+
+        <section class="feedback">
+            <div class="container feedback__container">
+                <div class="swiper feedback__slider">
+                    <div class="swiper-wrapper feedback__wrapper">
+                        <div class="swiper-slide feedback__slide">
+                            <svg class="feedback__svg">
+                                <use xlink:href="img/sprite.svg#quote"></use>
+                            </svg>
+                            <h2 class="feedback__title">
+                                Goede service, lekker eten, toffe ambiance
+                            </h2>
+                            <p class="feedback__text">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo  dolores et ea rebum. Stet clita kasd gubergren.
+                            </p>
+                            <p class="feedback__author">
+                                ALAIN HEYNDRICKX
+                            </p>
+                        </div>
+                        <div class="swiper-slide feedback__slide">
+                            <svg class="feedback__svg">
+                                <use xlink:href="img/sprite.svg#quote"></use>
+                            </svg>
+                            <h2 class="feedback__title">
+                                bestemor ba meg bøye meg
+                            </h2>
+                            <p class="feedback__text">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo  dolores et ea rebum. Stet clita kasd gubergren.
+                            </p>
+                            <p class="feedback__author">
+                                FRIDERIC BAKMAN
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feedback-button-prev"></div>
+                    <div class="feedback-button-next"></div>
+                    <div class="feedback-pagination"></div>
+                </div>      
+            </div>
+        </section>
+
+        <section class="callback">
+            <div class="callback__block">
+                <button class="callback__close" type="button" aria-label="закрыть модальное окно"></button>
+                <div class="callback__start">
+                    <h2 class="callback__title">
+                        Bestill bord med ett klikk!
+                    </h2>
+
+                    <form  id ="form" method="POST" name="form" enctype="multipart/form-data" action="/resources/mail.php" class="form callback__form">
+                        <label class="form__label">
+                            <input class="form__input" id="name"name="name" type="text" placeholder="Hva heter du?" data-validate-field="name">
+                        </label>
+
+                        <label class="form__label">
+                            <input class="form__input" id="tel" name="tel" type="tel" placeholder="Ditt telefonnummer" data-validate-field="tel">
+                        </label>
+
+                        <button class="form__btn" type="submit">Sende</button>
+                    </form>
+
+                </div>
+
+                <div class="callback__end">
+                    <h2 class="callback__head">
+                        Takk, vi ringer deg tilbake!
+                    </h2>
+                </div>
+            </div>   
+        </section>
+    </main>
+    <script src="./resources/swiper-bundle.min.js"></script>
+    <script src="./resources/jquery.min.js"></script>
+    <script src="./resources/inputmask.min.js"></script>
+    <script src="./resources/just-validate.production.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  min-width: 320px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: $base-font-size;
+  font-family: $base-font-family, sans-serif;
+  background-color: $light-color;
+
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+input {
+  border: none;
+  background-color: transparent;
+}
+
+input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
+input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+.stop-scroll {
+  @include stop-scroll
+}
+
+.visually-hidden {
+  @include visually-hidden
+}
+
+.is-hidden {
+  display: none !important;
+}
+
+.wrap {
+  background-image: url(../img/jpg/fon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (max-width: 1024px) {
+    background-color: $light-color;
+    background-image: none;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  min-width: 320px;
+  padding: 0 15px;
+  margin: 0 auto;
+}

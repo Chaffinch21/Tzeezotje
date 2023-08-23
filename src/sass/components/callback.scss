@@ -1,0 +1,177 @@
+.callback {
+  @include modal;
+
+  &__block {
+      position: relative;
+      top: 100px;
+      width: 584px;
+      height: 360px;
+      padding: 30px;
+      border-radius: 10px;
+      margin: 0;
+      background-color: #ffffff;
+      transform: scale(0);
+      transition: transform .5s ease;
+  
+      @media (max-width: 600px) {
+        width: 296px;
+        height: 387px;
+        padding: 30px 10px 30px 16px;
+      }
+  }
+
+  &__close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: transparent;
+      color: $first-color;
+      width: 20px;
+      height: 20px;
+      border: none;
+      cursor: pointer;
+
+      &:before,
+      &:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          height: 18px;
+          width: 2px;
+          background-color: $second-color;
+          transition: background-color .3s ease-in-out;
+      }
+
+      &:before {
+          transform: rotate(45deg);
+      }
+
+      &::after {
+          transform: rotate(-45deg);
+      }
+
+      &:hover:before {
+          background-color: $first-color; 
+      }
+
+      &:hover:after {
+          background-color: $first-color; 
+      }
+  }
+
+  &__start {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+  }
+
+  &__title {
+      margin: 0;
+      margin-bottom: 28px;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 100%;
+  
+      @media (max-width: 600px) {
+        font-size: 24px;
+      }
+    }
+  
+    &__end {
+      display: none;
+      height: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__head {
+      font-style: 36px;
+      line-height: 48px;
+    }
+
+}
+
+.callback.visible {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .callback.visible .callback__block {
+    transform: scale(1);
+  }
+
+  .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  
+    &__label {
+      position: relative;
+      width: 100%;
+      margin-bottom: 29px;
+    }
+  
+    &__input {
+      width: 100%;
+      padding: 17px;
+      border-radius: 10px;
+      border: 1px solid $second-color;
+      background-color: $light-text;
+      transition: background-color .3s ease-in-out, border .3s ease-in-out;
+  
+      &::placeholder {
+        color: $first-color;
+      }
+  
+      &:hover {
+        background-color: $grey-e7;
+        border: 1px solid $first-color;
+      }
+  
+      &:focus {
+        background-color: $grey-e7;
+        border: 1px solid $first-color;
+      }
+  
+      &:active {
+        background-color: $light-text;
+        border: 1px solid $first-color;
+      }
+    }
+  
+    &__btn {
+      @include button-blau;
+      padding: 14px 32px;
+      border-radius: 10px
+    }
+  }
+
+  .just-validate-error-label {
+    position: absolute;
+    z-index: 10;
+    top: -31%;
+    left: 20px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: red !important;
+  }
+  
+  #form>.just-validate-error-label {
+    position: absolute;
+    top: auto;
+    bottom: -20px;
+  }
+  
+  .just-validate-error-field {
+    border: 1px solid red !important;
+  }
+  
+  .just-validate-success-field {
+    border: 1px solid $second-color !important;
+  }

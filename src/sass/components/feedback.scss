@@ -1,0 +1,169 @@
+.feedback {
+    background-color: $first-color;
+    padding: 224px 0;
+
+    @media (max-width: 1024px) {
+        padding: 144px 0;
+    }
+
+    @media (max-width: 768px) {
+        padding: 84px 0;
+    }
+
+    &__slider {
+        width: 100%;
+        position: relative;
+
+        @media (max-width: 530px) {
+            padding-bottom: 60px;
+        }
+    }
+
+    &__slide {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__svg {
+        width: 83px;
+        height: 58px;
+        margin-bottom: 34px;
+
+        @media (max-width: 530px) {
+            width: 58px;
+        }
+    }
+
+    &__title {
+        margin: 0;
+        margin-bottom: 20px;
+        color: $second-color;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 40px;
+        text-align: center;
+
+        @media (max-width: 1024px) {
+            font-size: 24px;
+            line-height: 32px;
+        }
+
+        @media (max-width: 530px) {
+            width: 80%;
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
+
+    &__text {
+        margin: 0;
+        margin-bottom: 28px;
+        width: 66%;
+        color: $light-color;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 40px;
+
+        @media (max-width: 530px) {
+            width: 80%;
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+
+    &__author {
+        margin: 0;
+        color: #D3B47F;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 40px;
+        letter-spacing: 5.88px;
+        @media (max-width: 1024px) {
+            font-size: 20px;
+            line-height: 28px;
+        }
+
+        @media (max-width: 530px) {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+
+
+ 
+    &-button-prev {
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        z-index: 100;
+        transform: translateY(-50%);
+        width: 23px;
+        height: 55px;
+        color: $light-color;
+        background-image: url("../img/svg/disabled-left.svg");
+        background-repeat: no-repeat;
+
+        @media (max-width: 530px) {
+            display: none;
+        }
+    }
+
+    &-button-next {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        z-index: 100;
+        width: 23px;
+        height: 55px;
+        transform: translateY(-50%);
+        background-image: url("../img/svg/disabled-right.svg");
+        background-repeat: no-repeat;
+
+        @media (max-width: 530px) {
+            display: none;
+        }
+    }
+
+    &-pagination { 
+        display: none;
+        position: absolute;
+        bottom: 0px !important;
+        left: 46% !important;
+
+        @media (max-width: 530px){
+            display: block;
+        }
+    }
+
+    &-bullit {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
+        background-color: $light-color;
+
+        &:not(:first-child) {
+            margin-left: 10px;
+        }
+
+        &__active {
+            background-color: $second-color;
+        }
+    }
+
+}
+
+.feedback-button-prev.feedback-button-disabled {
+    background-image: url("../img/svg/arrow-left.svg");
+    background-repeat: no-repeat;
+}
+
+.feedback-button-next.feedback-button-disabled {
+    background-image: url("../img/svg/arrow-right.svg");
+    background-repeat: no-repeat;
+}

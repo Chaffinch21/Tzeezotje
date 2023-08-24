@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tzeezotje</title>
-    <meta content="Content-Security-Policy: default-src 'none'; script-src https://localhost:3000; style-src https://localhost:3000; img-src https://localhost:3000; connect-src https://localhost:3000; child-src 'self'; report-uri /my_amazing_csp_report_parser">
     <link rel = "icon" href="./img/favicon/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/vendor.css">
     <link rel="stylesheet" href="./css/main.css">
@@ -209,7 +208,7 @@
 
                     <form  id ="form" method="POST" name="form" enctype="multipart/form-data" action="/resources/mail.php" class="form callback__form">
                         <label class="form__label">
-                            <input class="form__input" id="name"name="name" type="text" placeholder="Hva heter du?" data-validate-field="name">
+                            <input class="form__input" id="name" name="name" type="text" placeholder="Hva heter du?" data-validate-field="name">
                         </label>
 
                         <label class="form__label">
